@@ -1,6 +1,18 @@
+scene.onOverlapTile(SpriteKind.Player, sprites.builtin.coral3, function (sprite, location) {
+    game.over(true)
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
+        mySprite.vy = -200
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, function (sprite, location) {
+    game.over(false)
+})
+let mySprite: Sprite = null
 scene.setBackgroundColor(9)
 tiles.setTilemap(tilemap`level1`)
-let mySprite = sprites.create(img`
+mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . 3 3 3 3 3 3 3 3 . . . . 
     . . . 3 d 3 3 3 3 3 3 c 3 . . . 
@@ -19,3 +31,5 @@ let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 mySprite.ay = 400
+mySprite.vx = 100
+scene.cameraFollowSprite(mySprite)
