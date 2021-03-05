@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="t`K:T.q^GsLq[/%ch-q?">mySprite</variable><variable type="KIND_SpriteKind" id="M[~Eq#1-hZR9/|`WrY@w">Player</variable><variable type="KIND_SpriteKind" id=");rsJUJVLR=QTY%x3g@r">Projectile</variable><variable type="KIND_SpriteKind" id="Lj@hGmr(dIOU1/YflRe$">Food</variable><variable type="KIND_SpriteKind" id="6nen%uDmCc=0`OI3z}Zp">Enemy</variable></variables><block type="pxt-on-start" id="y!ygW0#[/nP[Ufk~])CH" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="d{iCWZ^7tSwwHh#5gl8W"><value name="color"><shadow type="colorindexpicker" id="vT!Xkot@|V;`5Q10HaU#"><field name="index">9</field></shadow></value><next><block type="tilemap_editor" id="d%XCVCzu+rMSjmA(7IAm"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data><next><block type="variables_set" id="4$9w7k];1t]5!WEs;#wd"><field name="VAR" id="t`K:T.q^GsLq[/%ch-q?">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="(cCuFjRutU~:Tc#D14GE"><value name="img"><shadow type="screen_image_picker" id="+[!$AZfOaC7=;UF[w=2R"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . 3 3 3 3 3 3 3 3 . . . . 
+. . . 3 d 3 3 3 3 3 3 c 3 . . . 
+. . 3 c d 3 3 3 3 3 3 c c 3 . . 
+. 3 c c d d d d d d 3 c c d 3 d 
+. 3 c 3 a a a a a a a b c d 3 3 
+. 3 3 a b b a b b b a a b d 3 3 
+. 3 a b b b a b b b b a 3 3 3 3 
+. a a 3 3 3 a 3 3 3 3 3 a 3 3 3 
+. a a a a a a f a a a f a 3 d d 
+. a a a a a a f a a f a a a 3 d 
+. a a a a a a f f f a a a a a a 
+. a f f f f a a a a f f f a a a 
+. . f f f f f a a f f f f f a . 
+. . . f f f . . . . f f f f . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image1"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="{v*I1(XYrbIE99;=`{KG"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="Sprite_blockCombine_set" id="?DU7_LMC_^H^gS?92skp"><field name="property">Sprite.ay@set</field><value name="mySprite"><block type="variables_get" id="7v?A-*v6X@0QV53hYPrU"><field name="VAR" id="t`K:T.q^GsLq[/%ch-q?">mySprite</field></block></value><value name="value"><shadow type="math_number" id="2jvGVTM6Gd!ueT=(W{vk"><field name="NUM">400</field></shadow></value></block></next></block></next></block></next></block></statement></block></xml>
